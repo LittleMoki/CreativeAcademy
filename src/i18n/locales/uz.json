@@ -1,0 +1,17 @@
+{
+	"language": "Tilni tanlang",
+	"form": {
+		"title": "Bepul vebinar",
+		"subtitle": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, error modi? Officiis dolorum a illo! Dignissimos quisquam sit quaerat asperiores.",
+		"name": "Ismingiz va familiyangiz",
+		"phone": "Telefon raqamingiz",
+		"sendButton": "Yuborish",
+		"contacts": "Kontaktlar"
+	},
+	"dates": {
+		"day": "Kunlar",
+		"hour": "Soatlar",
+		"minute": "Daqiqalar",
+		"second": "Soniyalar"
+	}
+}

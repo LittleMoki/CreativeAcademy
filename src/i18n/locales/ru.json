@@ -1,0 +1,17 @@
+{
+	"language": "Выберите язык",
+	"form": {
+		"title": "Бесплатный вебинар",
+		"subtitle": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, error modi? Officiis dolorum a illo! Dignissimos quisquam sit quaerat asperiores.",
+		"name": "Ваше имя и фамилия",
+		"phone": "Ваш телефон",
+		"sendButton": "Отправить",
+		"contacts": "Контакты"
+	},
+	"dates": {
+		"day": "Дни",
+		"hour": "Часы",
+		"minute": "Минуты",
+		"second": "Секунды"
+	}
+}
