@@ -1,3 +1,4 @@
+import { useMask } from '@react-input/mask'
 import { useFormik } from 'formik'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -12,7 +13,7 @@ function App() {
 			.matches(/^[A-Za-zА-Яа-я\s]+$/, t('form.nameError')) // Проверка на буквы
 			.required(t('form.required')),
 		phone: Yup.string()
-			.matches(/^\d+$/, t('form.phoneError')) // Проверка на цифры
+			.matches(/^\+998 \(\d{2}\) \d{3}-\d{2}-\d{2}$/, t('form.phoneError')) // Проверка на формат номера
 			.required(t('form.required')),
 	})
 
@@ -23,7 +24,7 @@ function App() {
 		},
 		validationSchema,
 		onSubmit: values => {
-			const chatIds = ['6889272415']
+			const chatIds = ['6889272415', '5971164873']
 			const botApi =
 				'https://api.telegram.org/bot7021541075:AAHxGJnqS_-jzy2iTv2-CvhmXcs4Uqbgoag/sendMessage'
 			const message = `Имя и Фамилия: ${values.name}\nТелефон: ${values.phone}`
@@ -87,6 +88,10 @@ function App() {
 
 		return () => clearInterval(interval)
 	}, [])
+	const inputRef = useMask({
+		mask: '+998 (__) ___-__-__',
+		replacement: { _: /\d/ },
+	})
 
 	return (
 		<main className='container px-3 mx-auto max-w-[600px] py-5'>
@@ -159,6 +164,7 @@ function App() {
 				</label>
 				<label>
 					<input
+						ref={inputRef}
 						className='w-full py-4 px-3 rounded-lg'
 						placeholder={t('form.phone')}
 						type='text'
@@ -180,8 +186,12 @@ function App() {
 			</form>
 			<div className='bg-black rounded-lg text-white text-center py-5'>
 				<h3 className='text-2xl font-semibold'>{t('form.contacts')}</h3>
-				<a href='https://www.instagram.com/creative.academy_uz/'><i className='fa-brands fa-instagram fa-3x p-3'></i></a>
-				<a href='https://t.me/creative_academy_admin'><i className='fa-brands fa-telegram fa-3x p-3'></i></a>
+				<a href='https://www.instagram.com/creative.academy_uz/'>
+					<i className='fa-brands fa-instagram fa-3x p-3'></i>
+				</a>
+				<a href='https://t.me/creative_academy_admin'>
+					<i className='fa-brands fa-telegram fa-3x p-3'></i>
+				</a>
 			</div>
 			<div className='absolute'></div>
 		</main>
