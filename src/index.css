@@ -64,3 +64,31 @@ body {
   border-radius: 5px;
   font-size: 60px;
 }
+
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .result-title {
+        font-size: 20px;
+    }  
+    .data {
+        font-size: 40px;
+        /* width: 100px; */
+        margin: 0 10px;
+        border-radius: 5px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .countdown {
+        margin-top: 20px;
+    }
+    .result-title {
+        font-size: 15px;
+    }  
+    .data {
+        font-size: 30px;
+        /* width: 80px; */
+        margin: 0 10px;
+        border-radius: 5px;
+    }
+}

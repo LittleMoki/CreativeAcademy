@@ -23,7 +23,7 @@ function App() {
 		},
 		validationSchema,
 		onSubmit: values => {
-			const chatIds = ['5971164873', '123456789', '987654321']
+			const chatIds = ['6889272415']
 			const botApi =
 				'https://api.telegram.org/bot7021541075:AAHxGJnqS_-jzy2iTv2-CvhmXcs4Uqbgoag/sendMessage'
 			const message = `Имя и Фамилия: ${values.name}\nТелефон: ${values.phone}`
@@ -53,7 +53,7 @@ function App() {
 			})
 
 			// Перенаправление после отправки
-			window.location.href = 'https://t.me/litle_moki'
+			window.location.href = 'https://t.me/creative_academy_uz'
 		},
 	})
 
@@ -90,8 +90,8 @@ function App() {
 
 	return (
 		<main className='container px-3 mx-auto max-w-[600px] py-5'>
-			<div className='pb-4 grid grid-cols-2'>
-				<img className='max-w-[180px]' src='/logo.png' alt='logo' />
+			<div className='pb-4 gap-3 grid grid-cols-2'>
+				<img className='max-w-[150px]' src='/logo.png' alt='logo' />
 				<div className='flex items-end flex-col'>
 					<h3 className='text-xl font-semibold pb-3 text-black'>
 						{t('language')}
@@ -118,7 +118,7 @@ function App() {
 					{t('form.title')}
 				</h3>
 				<p className='text-white text-center text-xl'>{t('form.subtitle')}</p>
-				<div className='countdown'>
+				<div className='text-center gap-3 justify-items-center grid grid-cols-4 max-[480px]:grid-cols-2'>
 					<div>
 						<p className='result-title'>{t('dates.day')}</p>
 						<div className='data' id='countdown-days'>
@@ -180,8 +180,8 @@ function App() {
 			</form>
 			<div className='bg-black rounded-lg text-white text-center py-5'>
 				<h3 className='text-2xl font-semibold'>{t('form.contacts')}</h3>
-				<i className='fa-brands fa-instagram fa-3x p-3'></i>
-				<i className='fa-brands fa-telegram fa-3x p-3'></i>
+				<a href='https://www.instagram.com/creative.academy_uz/'><i className='fa-brands fa-instagram fa-3x p-3'></i></a>
+				<a href='https://t.me/creative_academy_admin'><i className='fa-brands fa-telegram fa-3x p-3'></i></a>
 			</div>
 			<div className='absolute'></div>
 		</main>
