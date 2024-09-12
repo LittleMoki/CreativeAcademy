@@ -63,7 +63,7 @@ function App() {
 
 	// Логика таймера
 	useEffect(() => {
-		const endTime = new Date('2024-09-14 23:59:59')
+		const endTime = new Date('2024-09-14 16:00:00')
 
 		const interval = setInterval(() => {
 			const currentTime = new Date()
@@ -93,7 +93,7 @@ function App() {
 			<div className='pb-4 gap-3 grid grid-cols-2'>
 				<img className='max-w-[150px]' src='/logo.png' alt='logo' />
 				<div className='flex items-end flex-col'>
-					<h3 className='text-xl font-semibold pb-3 text-black'>
+					<h3 className='text-xl font-semibold pb-3 text-right text-black'>
 						{t('language')}
 					</h3>
 					<select
