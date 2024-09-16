@@ -13,5 +13,9 @@
 		"hour": "Soatlar",
 		"minute": "Daqiqalar",
 		"second": "Soniyalar"
-	}
+	},
+	"errors": {
+    "phone": "Telefon raqamingiz noto'g'ri kiritilgan yoki maydon bo'sh",
+    "name": "Ushbu maydonni to'ldiring"
+}
 }

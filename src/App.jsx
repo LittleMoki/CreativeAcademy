@@ -159,7 +159,7 @@ function App() {
 						onChange={formik.handleChange}
 					/>
 					{formik.errors.name ? (
-						<div className='text-red-500'>{formik.errors.name}</div>
+						<div className='text-red-500'>{t('errors.name')}</div>
 					) : null}
 				</label>
 				<label>
@@ -173,7 +173,7 @@ function App() {
 						onChange={formik.handleChange}
 					/>
 					{formik.errors.phone ? (
-						<div className='text-red-500'>{formik.errors.phone}</div>
+						<div className='text-red-500'>{t('errors.phone')}</div>
 					) : null}
 				</label>
 				<label>
