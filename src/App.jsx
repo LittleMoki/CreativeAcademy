@@ -115,7 +115,7 @@ function App() {
 					</select>
 				</div>
 			</div>
-			<img src={`${i18n.language === 'ru'?'/welcomeRU.png':'/welcomeUZ.png'}`} alt='' className='bg-white w-full h-[300px] rounded-lg' />
+			<img src={`${i18n.language === 'ru'?'/welcomeRU.png':'/welcomeUZ.png'}`} alt='' className='bg-[#9900ff] w-full h-[300px] rounded-lg object-contain' />
 			<form
 				className='flex flex-col gap-4 py-4 my-8 py-3 px-3 rounded-lg bg-black'
 				onSubmit={formik.handleSubmit}
