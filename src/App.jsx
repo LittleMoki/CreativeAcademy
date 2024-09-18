@@ -2,6 +2,7 @@ import { useMask } from '@react-input/mask'
 import { useFormik } from 'formik'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+
 import * as Yup from 'yup'
 
 function App() {
@@ -114,7 +115,7 @@ function App() {
 					</select>
 				</div>
 			</div>
-			<img src='' alt='' className='bg-white w-full h-[300px] rounded-lg' />
+			<img src={`${i18n.language === 'ru'?'/welcomeRU.png':'/welcomeUZ.png'}`} alt='' className='bg-white w-full h-[300px] rounded-lg' />
 			<form
 				className='flex flex-col gap-4 py-4 my-8 py-3 px-3 rounded-lg bg-black'
 				onSubmit={formik.handleSubmit}
@@ -178,7 +179,7 @@ function App() {
 				</label>
 				<label>
 					<input
-						className='w-full py-4 px-3 rounded-lg bg-yellow-500'
+						className='w-full py-4 px-3 rounded-lg bg-[#9900ff]'
 						type='submit'
 						value={t('form.sendButton')}
 					/>
