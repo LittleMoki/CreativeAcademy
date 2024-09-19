@@ -65,7 +65,7 @@ function App() {
 
 	// Логика таймера
 	useEffect(() => {
-		const endTime = new Date('2024-09-14 16:00:00')
+		const endTime = new Date('2024-09-23 15:00:00')
 
 		const interval = setInterval(() => {
 			const currentTime = new Date()
